@@ -5,8 +5,17 @@
 }
 
 :root {
-    --color-main : ;
-    --color-secondary: ;
+    /*font-family*/
+    font-family: sans-serif;
+    /*color schemes */
+    --color-main :#22d3ee ;
+    --color-secondary:#fde047 ;
+    --color-tertiary : #d6d3d1;
+
+    /*font-sizes */
+    --h1-text : 2em ;
+    --nav-text : 1.5em;
+    
 
 }
 
@@ -14,6 +23,7 @@
 
 /*general grid layout of the page on desktop---------------------------------*/
 body {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
@@ -35,4 +45,58 @@ body {
 }
 
 /*grid layout for dashboard section*/
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap : 40px;
+    
+    background-color:var(--color-main) ;
+    
+    padding: 30px;
+}
+
+/*remove the underlining of the nav items*/
+.sidebar a {
+    text-decoration: none;
+    color : white;
+}
+/*remove the bullet line styling of the list-items */
+.sidebar li {
+    list-style-type: none;
+}
+
+/*title */
+
+
+h1 .title-text {
+    margin-left: 20px;
+    font-size: var(--h1-text); 
+   
+}
+
+.dashboard-icon {
+    width: 1em;
+    height: 1em;
+}
+/*----*/
+/*text nad icons styling */
+.sidebar ul a {
+    font-size: var(--nav-text);
+}
+
+.nav-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-icon + a {
+    margin-left: 20px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
