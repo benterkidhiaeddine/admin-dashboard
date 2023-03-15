@@ -44,7 +44,7 @@ body {
     grid-row : 2 / 6;
 }
 
-/*grid layout for dashboard section*/
+/*grid layout for navbar section*/
 
 .sidebar{
     display: flex;
@@ -76,8 +76,8 @@ h1 .title-text {
 }
 
 .dashboard-icon {
-    width: 1em;
-    height: 1em;
+    width: var(--h1-text);
+    height: var(--h1-text);
 }
 /*----*/
 /*text nad icons styling */
@@ -86,10 +86,11 @@ h1 .title-text {
 }
 
 .nav-icon {
-    height: 20px;
-    width: 20px;
+    height: var(--nav-text);
+    width: var(--nav-text);
+    
 }
-
+/*separation between the nav icon and the text*/
 .nav-icon + a {
     margin-left: 20px;
 }
@@ -98,5 +99,12 @@ h1 .title-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/*layout for the header section -----------------------------------*/
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows:  1fr 1fr ;
 }
 

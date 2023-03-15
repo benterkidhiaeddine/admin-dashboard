@@ -10,67 +10,89 @@
   <body>
     <!--Header section-->
     <header class="header">
-      <button class="button-icon search-button"></button>
-      <input type="text" name="search" class="search-input" />
-      <button class="button-icon alert-button"></button>
-      <img src="" alt="profile image of a user" class="profile-picture-small" />
-      <p class="user-name-small"></p>
-      <img src="" alt="profile-picture-big" />
-      <p class="salutation">Hi there,</p>
-      <p class="user-name-big">Morgan oakley (@morgan)</p>
+      <div class="search-container">
+        <button class="button-icon search-button"></button>
+        <input type="text" name="search" class="search-input" />
+      </div>
+      <div class="alert-container">
+        <button class="button-icon alert-button"></button>
+        <img
+          src=""
+          alt="profile image of a user"
+          class="profile-picture-small"
+        />
+        <p class="user-name-small"></p>
+      </div>
+      <div class="salutation-container">
+        <img src="" alt="profile-picture-big" />
+        <p class="salutation">Hi there,</p>
+        <p class="user-name-big">Morgan oakley (@morgan)</p>
+      </div>
 
-      <button class="button-main">New</button>
-      <button class="button-main">Upload</button>
-      <button class="button-main">Share</button>
+      <div class="actions-container">
+        <button class="button-main">New</button>
+        <button class="button-main">Upload</button>
+        <button class="button-main">Share</button>
+      </div>
     </header>
 
     <!--Sidebar section-->
     <nav class="sidebar">
       <h1 class="dashboard-title">
         <a href="index.html"
-          ><img class="dashboard-icon" src="" alt="" /><span class="title-text"
-            >Dashboard</span
-          ></a
+          ><img
+            class="dashboard-icon"
+            src="./images/view-dashboard.svg"
+            alt="Dashboard icon"
+          /><span class="title-text">Dashboard</span></a
         >
       </h1>
       <ul class="dashboard-pages">
         <li>
-          <img class="nav-icon" src="/images/home.svg" alt="" />
+          <img class="nav-icon" src="/images/home.svg" alt="Home icon" />
           <a href="">Home</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img
+            class="nav-icon"
+            src="/images/card-account-details-outline.svg"
+            alt="profile icon"
+          />
           <a href="">Profile</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img
+            class="nav-icon"
+            src="/images/message-reply-outline.svg"
+            alt=""
+          />
           <a href="">Messages</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/history.svg" alt="" />
           <a href="">History</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/file-multiple.svg" alt="" />
           <a href="">Tasks</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/account-group.svg" alt="" />
           <a href="">Communities</a>
         </li>
       </ul>
 
       <ul class="dashboard-utilities">
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/cog.svg" alt="" />
           <a href="">Settings</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/help-box.svg" alt="" />
           <a href="">Support</a>
         </li>
         <li>
-          <img class="nav-icon" src="" alt="" />
+          <img class="nav-icon" src="/images/shield-check-outline.svg" alt="" />
           <a href="">Privacy</a>
         </li>
       </ul>
