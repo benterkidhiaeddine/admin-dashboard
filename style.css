@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-main : ;
+    --color-secondary: ;
+
+}
+
+/*--------Grid layout on desktop---------------------------------------------*/
+
+/*general grid layout of the page on desktop---------------------------------*/
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+.header {
+    grid-column : 2 / 5 ;
+    grid-row : 1 / 2;
+}
+
+.main {
+    grid-column : 2 / 5 ;
+    grid-row : 2 / 6;
+}
+
+/*grid layout for dashboard section*/
+
